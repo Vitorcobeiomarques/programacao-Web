@@ -1,12 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
   let typeform = ''
   let htmlTab = ''
+  
 
   for (let i = 0; i < 2; i++) {
-    i == 0 ? typeform = 'user' : typeform = 'atendente'
+    i == 0 ? typeform = 'Cliente' : typeform = 'Atendente'
     htmlTab += `<div class="form-card">
 <section class="header">
-    <h2>Cadastro Cliente</h2>
+    <h2>Cadastro ${typeform}</h2>
 </section>
 
 <form id="form-${typeform}" class="form">
