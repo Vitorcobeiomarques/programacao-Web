@@ -314,6 +314,7 @@ p {
   display: flex;
   -webkit-box-align: center;
   align-items: center;
+  flex: 1 0 0%;
 }
 
 .Texto_1 {
@@ -500,3 +501,15 @@ input[type="hidden" i] {
   padding: initial;
   border: initial;
 }
+
+.Form_20 {
+  box-sizing: border-box;
+  width: 100%;
+  flex: unset;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 3px 10px;
+  position: relative;
+}
+
