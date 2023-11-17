@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/login.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">
+                <div class="background-logo">
+                    <img src="../assets/image/Logo-mini.svg" alt="Logo">
+                </div>ADIMO Imobiliária
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="content">
+                <div class="form-content">
+                    <h2>Login</h2>
+
+                    <form id="loginForm">
+                        <label for="username">Usuário:</label>
+                        <input type="text" id="username" name="username" required placeholder="Escreva aqui...">
+
+                        <label for="password">Senha:</label>
+                        <input type="password" id="password" name="password" required placeholder="Escreva aqui...">
+
+                        <p>Ainda não tem cadastro? <a href="">Clique Aqui.</a></p>
+
+                        <button type="button" onclick="fazerLogin()" id="btn-login">Entrar</button>
+                    </form>
+
+                </div>
+
+                <div class="image">
+                    <img src="../assets/image/undraw_login_re_4vu2.svg" alt="Imagem ilustrativa">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../assets/js/autenticarLogin.js"></script>
+</body>
+
+</html>

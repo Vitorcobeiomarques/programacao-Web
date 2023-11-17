@@ -1,0 +1,48 @@
+main {
+    padding-top: 12vh;
+}
+
+main .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 88vh;
+}
+
+main .container .content {
+    width: 50%;
+}
+
+main .container .content h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--second-color-blue);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+main .container .content p {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+main .container .content a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--second-color-blue);
+    border: transparent 1px solid;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+main .container .content a:hover {
+    background-color: var(--second-color-blue-hover);
+    color: var(--second-color-blue);
+    border-color: var(--second-color-blue);
+}
+
