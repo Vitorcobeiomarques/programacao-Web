@@ -24,6 +24,10 @@ body {
     color: var(--font-color-black);
 }
 
+main {
+    padding-top: 12vh;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;

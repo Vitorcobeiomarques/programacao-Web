@@ -18,12 +18,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (username === "Cliente" && password === "ClientePassword") {
             window.location.href = "../paginas/telaCliente.html";
-            return; // Saia da função após o redirecionamento
+            return; 
         }
 
         if (username === "Atendente" && password === "AtendentePassword") {
             window.location.href = "../paginas/telaAtendente.html";
-            return; // Saia da função após o redirecionamento
+            return; 
         }
 
         alert("Credenciais inválidas. Tente novamente.");
