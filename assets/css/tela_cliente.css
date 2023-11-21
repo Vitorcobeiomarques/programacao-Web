@@ -7,9 +7,9 @@ main{
 }
 
 h2{
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
-    text-align: center;
+    margin-bottom: 20px;
 }
 
 .list-content{
@@ -23,9 +23,99 @@ h2{
 
 .property{
     border: var(--primary-color-blue) 1px solid;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 30px;
-    width: 300px;
+    border-radius: 10px;
+    margin: 20px;
+    width: 400px;
+}
+
+.property img{
+    width: 100%;
     height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.property-info{
+    padding: 10px 5px;
+}
+
+.property-info h3{
+    color: var(--second-color-blue);
+    font-size: 1.3rem;
+}
+
+.location{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.description{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.price{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.property-info button{
+    padding: 10px 0;
+    margin: 5px 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--second-color-blue);
+    color: var(--color-white);
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.property-info button:hover{
+    background-color: var(--primary-color-blue);
+}  
+
+#list-interest {
+    min-height: 50vh;
+    padding: 10px 0;
+}
+
+#interestsList{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.property-card{
+    border: var(--primary-color-blue) 1px solid;
+    border-radius: 10px;
+    margin: 20px;
+    width: 350px;
+    height: 300px;
+}
+
+.property-card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+#schedule-visits{
+    min-height: 50vh;
+    padding: 10px 0;
+}
+
+#scheduledVisitsList{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
 }
