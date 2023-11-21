@@ -67,7 +67,7 @@ h2{
 
 #btn-login{
     background: var(--primary-color-blue);
-    color: white;
+    color: var(--color-white);
     border: var(--primary-color-blue) 2px solid;
     border-radius: 24px;
     padding: 10px;
@@ -80,6 +80,6 @@ h2{
 }
 
 #btn-login:hover{
-    background: none;
-    border: var(--primary-color-blue) 2px solid;
+    background: var(--color-white); 
+    color: var(--primary-color-blue);
 }

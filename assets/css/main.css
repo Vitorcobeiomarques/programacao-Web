@@ -51,7 +51,7 @@ header .container {
     height: 100%;
 }
 
-header .logo {
+header h1 {
     font-size: 1.5rem;
     font-weight: 700;
     color: #fff;
@@ -60,7 +60,7 @@ header .logo {
     gap: 5px;
 }
 
-header .logo .background-logo {
+header h1 .background-logo {
     height: 60px;
     width: 60px;
     background-color: #fff;
@@ -83,10 +83,25 @@ header nav ul{
 
 header nav a {
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 500;
+    padding: 5px 10px;
+    border: #fff 1px solid;
+    transition: all 0.3s ease;
 }
 
 header nav a:hover {
+    background-color: #fff;
     color: var(--primary-color-blue);
+}
+
+footer{
+    background-color: var(--second-color-blue);
+    color: var(--color-white);
+    margin-top: 1.5rem;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
