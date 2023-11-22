@@ -15,7 +15,7 @@ h2{
 .list-content{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
@@ -24,8 +24,8 @@ h2{
 .property{
     border: var(--primary-color-blue) 1px solid;
     border-radius: 10px;
-    margin: 20px;
-    width: 400px;
+    margin: 10px;
+    width: 360px;
 }
 
 .property img{
@@ -60,14 +60,13 @@ h2{
 }
 
 .property-info button{
-    padding: 10px 0;
-    margin: 5px 5px;
-    padding: 10px 20px;
+    margin: 5px;
+    padding: 10px 15px;
     border: none;
     border-radius: 5px;
     background-color: var(--second-color-blue);
     color: var(--color-white);
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
     transition: .3s ease-in-out;

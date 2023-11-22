@@ -21,7 +21,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const addedInterests = new Set();
     const addedVisits = new Set();
 
-    // Inicializa a lista de imóveis disponíveis
     propertyDatabase.forEach(property => {
         const propertyDiv = createPropertyElement(property);
         propertyList.appendChild(propertyDiv);
