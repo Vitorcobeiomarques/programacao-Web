@@ -25,7 +25,8 @@ h2{
     border: var(--primary-color-blue) 1px solid;
     border-radius: 10px;
     margin: 10px;
-    width: 360px;
+    width: 500px;
+    height: 520px;
 }
 
 .property img{
@@ -94,8 +95,7 @@ h2{
     border: var(--primary-color-blue) 1px solid;
     border-radius: 10px;
     margin: 20px;
-    width: 350px;
-    height: 300px;
+    width: 370px;
 }
 
 .property-card img{
@@ -104,7 +104,11 @@ h2{
     object-fit: cover;
     border-radius: 10px 10px 0 0;
 }
-
+.property-card p{
+    padding: 10px 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
 #schedule-visits{
     min-height: 50vh;
     padding: 10px 0;
