@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela do Atendente</title>
-    <link rel="stylesheet" href="../assets/css/main.css"> <!-- Adicione este link se você estiver usando um arquivo CSS separado -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/tela_atendente.css"> 
 </head>
 
 <body>
@@ -20,89 +21,52 @@
             </h1>
             <nav>
                 <ul>
-                    <li><a href="tela_atendente.html"></a></li>
-                    <li><a href="tela_corretor.html"></a></li>
-                    <li><a href="tela_proprietario.html"></a></li>
-                    <li><a href="tela_administrador.html"></a></li>
+                    <li><a href="">Cadastrar Cliente</a></li>
+                    <li><a href="">Análise de Crédito</a></li>
+                    <li><a href="">Reserva</a></li>
+                    <li><a href="../index.html">Sair</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <section id="client-registration">
-            <div class="container">
-                <h2>Cadastro de Cliente</h2>
+        <div class="container">
+            <div class="content">
+                <h2>Bem-Vindo, Atendente</h2>
+                <p>Selecione uma das opções abaixo para começar.</p>
 
-                <form id="registrationForm">
-                    <label for="clientName">Nome do Cliente:</label>
-                    <input type="text" id="clientName" name="clientName" required>
-
-                    <label for="clientAddress">Endereço do Cliente:</label>
-                    <input type="text" id="clientAddress" name="clientAddress" required>
-
-                    <label for="propertyId">ID do Imóvel:</label>
-                    <input type="text" id="propertyId" name="propertyId" required>
-
-                    <button type="submit">Cadastrar Cliente</button>
-                </form>
+                <div class="content-btn">
+                    <div class="div-btn">
+                        <a href="./cadastrar_cliente.html">
+                            <button class="btn">Cadastrar Cliente</button>
+                        </a>
+                        <p>Cadastre um novo cliente para efetuar a ficha cadastral.</p>
+                    </div>
+                    <div class="div-btn">
+                        <a href="./anlise_credito.html">
+                            <button class="btn">Análise de Crédito</button>
+                        </a>
+                        <p>Faça uma Análise de Crédito de um cliente cadastrado.</p>
+                    </div>
+                    <div class="div-btn">
+                        <a href="./reserva.html">
+                            <button class="btn">Reserva</button>
+                        </a>
+                        <p>Reserve um imovel para o cliente um cliente cadastrado.</p>
+                    </div>
+                </div>
             </div>
-        </section>
 
-        <section id="property-reservation">
-            <div class="container">
-                <h2>Reserva de Imóvel</h2>
-
-                <form id="reservationForm">
-                    <label for="reservationPropertyId">ID do Imóvel:</label>
-                    <input type="text" id="reservationPropertyId" name="reservationPropertyId" required>
-
-                    <button type="submit">Reservar Imóvel</button>
-                </form>
-            </div>
-        </section>
-
-        <section id="credit-analysis">
-            <div class="container">
-                <h2>Análise de Crédito</h2>
-
-                <form id="creditAnalysisForm">
-                    <label for="clientDocument">CPF do Cliente:</label>
-                    <input type="text" id="clientDocument" name="clientDocument" required>
-
-                    <button type="submit">Analisar Crédito</button>
-                </form>
-            </div>
-        </section>
-
-        <section id="approval-message">
-            <div class="container">
-                <h2>Mensagem de Aprovação</h2>
-
-                <p>A ficha cadastral foi aprovada. Envie uma mensagem para o cliente.</p>
-
-                <form id="approvalMessageForm">
-                    <label for="messageToClient">Mensagem:</label>
-                    <textarea id="messageToClient" name="messageToClient" required></textarea>
-
-                    <button type="submit">Enviar Mensagem</button>
-                </form>
-            </div>
-        </section>
-
-        <section id="rental-process">
-            <div class="container">
-                <h2>Processo de Locação</h2>
-
-                <p>Prossiga com o processo de locação após aprovação da ficha cadastral.</p>
-            </div>
-        </section>
-
+            <img src="../assets/image/undraw_work_time_re_hdyv.svg" alt="">
+        </div>        
     </main>
 
-
-    <script src="atendente.js"></script>
-    <!-- Adicione este link para o arquivo JavaScript específico da Tela do Atendente -->
+    <footer>
+        <div class="container">
+            <p>ADIMO Imobiliária - Todos os direitos reservados</p>
+        </div>
+    </footer>
 
 </body>
 
