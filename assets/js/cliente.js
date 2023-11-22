@@ -4,18 +4,18 @@ document.addEventListener('DOMContentLoaded', function () {
     const scheduledVisitsList = document.getElementById('scheduledVisitsList');
 
     const propertyDatabase = [
-        { id: 1, type: 'Apartamento', image: '../assets/image/img_imoveis/ap_1.jpg', description: 'Descrição do Imóvel 1', location: 'Centro' ,price: 'R$100,10' },
-        { id: 2, type: 'Apartamento', image: '../assets/image/img_imoveis/ap_2.jpg', description: 'Descrição do Imóvel 2', location: 'Centro' ,price: 'R$200,20' },
-        { id: 3, type: 'Apartamento', image: '../assets/image/img_imoveis/ap_3.jpg', description: 'Descrição do Imóvel 3', location: 'Centro' ,price: 'R$300,30' },
-        { id: 4, type: 'Apartamento', image: '../assets/image/img_imoveis/ap_4.jpg', description: 'Descrição do Imóvel 4', location: 'Centro' ,price: 'R$400,40' },
-        { id: 5, type: 'Apartamento', image: '../assets/image/img_imoveis/ap_5.jpg', description: 'Descrição do Imóvel 5', location: 'Centro' ,price: 'R$500,50' },
-        { id: 6, type: 'Apartamento', image: '../assets/image/img_imoveis/ap_6.jpg', description: 'Descrição do Imóvel 6', location: 'Centro' ,price: 'R$600,60' },
-        { id: 7, type: 'Apartamento', image: '../assets/image/img_imoveis/ap_7.jpg', description: 'Descrição do Imóvel 7', location: 'Centro' ,price: 'R$700,70' },
-        { id: 8, type: 'Apartamento', image: '../assets/image/img_imoveis/ap_8.jpg', description: 'Descrição do Imóvel 8', location: 'Centro' ,price: 'R$800,80' },
-        { id: 9, type: 'Apartamento', image: '../assets/image/img_imoveis/ap_9.jpg', description: 'Descrição do Imóvel 9', location: 'Centro' ,price: 'R$900,90' },
-        { id: 10, type: 'Apartamento', image: '../assets/image/img_imoveis/ap_10.jpg', description: 'Descrição do Imóvel 10', location: 'Centro' ,price: 'R$1000,00' },
-        { id: 11, type: 'Apartamento', image: '../assets/image/img_imoveis/ap_11.jpg', description: 'Descrição do Imóvel 11', location: 'Centro' ,price: 'R$1100,10' },
-        { id: 12, type: 'Apartamento', image: '../assets/image/img_imoveis/ap_12.jpg', description: 'Descrição do Imóvel 12', location: 'Centro' ,price: 'R$1200,20' },
+        { id: 1, type: 'Apartamento', image: '../assets/image/img_imoveis/ap_1.jpg', description: 'Apartamento na Vila Madalena, com 3 dormitórios, 1 vaga, salas para dois ambientes, 2 banheiros, cozinha completa com armários e acesso a área de serviço e com ótima área de lazer para as crianças.', location: 'Vila Madalena' ,price: 'R$300.000,00' },
+        { id: 2, type: 'Apartamento', image: '../assets/image/img_imoveis/ap_2.jpg', description: 'Apartamento na Chacára Santo Antônio, com 2 dormitórios, 1 vaga, sala de estar, 3 banheiros, cozinha completa com armários e acesso a área de serviço', location: 'Chacára Santo Antônio' ,price: 'R$289.000,00' },
+        { id: 3, type: 'Apartamento', image: '../assets/image/img_imoveis/ap_3.jpg', description: 'Apartamento no jardim Marajoara, com 3 dormitórios, 2 vagas, sala de estar, 3 banheiros, cozinha completa com armários e acesso a área de serviço', location: 'Jardim Marajoara' ,price: 'R$1.000.000,00' },
+        { id: 4, type: 'Apartamento', image: '../assets/image/img_imoveis/ap_4.jpg', description: 'Apartamento em Moema, com 1 dormitórios, 1 vaga, sala de estar, 1 banheiro, cozinha completa com armários e acesso a área de serviço', location: 'Moema' ,price: 'R$150.000,00' },
+        { id: 5, type: 'Apartamento', image: '../assets/image/img_imoveis/ap_5.jpg', description: 'Apartamento no Jardins, com 2 dormitórios, 2 vagas, sala de estar, 2 banheiros, cozinha completa com armários e acesso a área de serviço', location: 'Jardins' ,price: 'R$900.000,00' },
+        { id: 6, type: 'Apartamento', image: '../assets/image/img_imoveis/ap_6.jpg', description: 'Apartamento no Morumbi, com 3 dormitórios, 2 vagas, sala de estar, 3 banheiros, cozinha completa com armários e acesso a área de serviço', location: 'Morumbi' ,price: 'R$2.5000.000,00' },
+        { id: 7, type: 'Apartamento', image: '../assets/image/img_imoveis/ap_7.jpg', description: 'Apartamento na Barra Funda, com 3 dormitórios, 2 vagas, sala de estar, 3 banheiros, cozinha completa com armários e acesso a área de serviço', location: 'Barra Funda' ,price: 'R$560.000,00' },
+        { id: 8, type: 'Apartamento', image: '../assets/image/img_imoveis/ap_8.jpg', description: 'Apartamento no Itaim Bibi, com 3 dormitórios, 2 vagas, sala de estar, 3 banheiros, cozinha completa com armários e acesso a área de serviço', location: 'Itaim Bibi' ,price: 'R$700.810,00' },
+        { id: 9, type: 'Apartamento', image: '../assets/image/img_imoveis/ap_9.jpg', description: 'Apartamento no Brooklin, com 3 dormitórios, 1 vaga, sala de estar, 3 banheiros, cozinha completa com armários e acesso a área de serviço', location: 'Brooklin' ,price: 'R$1.000.800,00' },
+        { id: 10, type: 'Apartamento', image: '../assets/image/img_imoveis/ap_10.jpg', description: 'Apartamento no Itaim, com 2 dormitórios, 2 vagas, sala de estar, 3 banheiros, cozinha completa com armários e acesso a área de serviço', location: 'Itaim' ,price: 'R$862.250,,00' },
+        { id: 11, type: 'Apartamento', image: '../assets/image/img_imoveis/ap_11.jpg', description: 'Apartamento na Vila Mariana, com 3 dormitórios, 1 vaga, sala de estar, 2 banheiros, cozinha completa com armários e acesso a área de serviço', location: 'Vila Mariana' ,price: 'R$ 359.580,00' },
+        { id: 12, type: 'Apartamento', image: '../assets/image/img_imoveis/ap_12.jpg', description: 'Apartamento na Pompéia, com 4 dormitórios, 2 vagas, sala de estar, 3 banheiros, cozinha completa com armários e acesso a área de serviço', location: 'Pompéia' ,price: 'R$2.800.900,00' },
     ];
 
     const addedInterests = new Set();
